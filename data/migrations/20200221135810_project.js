@@ -33,6 +33,15 @@ exports.up = function(knex) {
                 .text("description")
                 .notNullable()
 
+            tbl
+                .integer("project_id")
+                .unsigned()
+                .notNullable()
+                .references('id')
+                .inTable("projects")
+                .onUpdate("CASCADE")
+                .onDelete("CASCADE")
+
             tbl.text("notes")
 
             tbl
