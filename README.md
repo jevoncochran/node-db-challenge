@@ -40,11 +40,19 @@ Demonstrate your understanding of this week's concepts by answering the followin
 
 - [ ] Explain the difference between `Relational Databases` and `SQL`.
 
+relational databases are a means of storing "related" data in tables while SQL is the standard language used to manage such databases
+
+
 - [ ] Why do tables need a `primary key`?
+Primary key gives each entry a unique identifier
 
 - [ ] What is the name given to a table column that references the primary key on another table.
 
+foreign key
+
 - [ ] What do we need in order to have a _many to many_ relationship between two tables.
+
+because in some contexts, tables have this type of relationship. The example given is TK is a good demonstration of this concept.  A farm has multiple animals, and multiple of each type of animal is present at multiple different farms. Therefore, if we wanted to track farm animals and farms, we would have to operate with a many-to-many relationship.
 
 ## Minimum Viable Product
 
