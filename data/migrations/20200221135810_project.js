@@ -13,6 +13,7 @@ exports.up = function(knex) {
 
             tbl
                 .boolean("completed")
+                .defaultTo(false)
                 .notNullable()
         })
 
@@ -46,6 +47,7 @@ exports.up = function(knex) {
 
             tbl
                 .boolean("completed")
+                .defaultTo(false)
                 .notNullable()
         })
   )

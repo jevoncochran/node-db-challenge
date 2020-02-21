@@ -7,6 +7,14 @@ const router = express.Router();
 router.get('/', (req, res) => {
     projects.findProjects()
         .then(projects => {
+            console.log(projects);
+            projects.map(project => {
+                if (project.completed === 0) {
+                    return project.completed = false;
+                } else {
+                    return project.completed = true;
+                }
+            })
             res.status(200).json(projects)
         })
         .catch(err => {

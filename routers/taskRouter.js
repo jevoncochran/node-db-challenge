@@ -7,6 +7,14 @@ const tasks = require('../models/taskModel');
 router.get('/', (req, res) => {
     tasks.find()
         .then(tasks => {
+            console.log(tasks);
+            tasks.map(task => {
+                if (task.completed === 0) {
+                    return task.completed = false;
+                } else {
+                    return task.completed = true;
+                }
+            })
             res.status(200).json(tasks);
         })
         .catch(err => {

@@ -8,7 +8,6 @@ module.exports = {
 
 function findProjects() {
     return db('projects')
-        .join('tasks', 'projects.id', 'tasks.project_id')
 }
 
 function add(project) {
