@@ -18,6 +18,7 @@
   "homepage": "https://github.com/jevoncochran/node-db-challenge#readme",
   "dependencies": {
     "express": "^4.17.1",
+    "knex": "^0.20.10",
     "nodemon": "^2.0.2"
   }
 }
